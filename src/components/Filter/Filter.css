@@ -1,0 +1,17 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.letter {
+    margin-right: 10px;
+}
+
+.letter:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.letter.active {
+    color: orange;
+}

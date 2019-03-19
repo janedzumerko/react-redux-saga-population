@@ -1,0 +1,23 @@
+export const FETCH_COUNTRIES = 'FETCH_COUNTRIES';
+export const FETCH_COUNTRIES_SUCCESS = 'FETCH_COUNTRIES_SUCCESS';
+export const FETCH_COUNTRIES_ERROR = 'FETCH_COUNTRIES_ERROR';
+
+export const SORT_COUNTRIES = 'SORT_COUNTRIES';
+
+export const FIND_HIGHEST_FEMALE_MALE_RATIO = 'FIND_HIGHEST_FEMALE_MALE_RATIO';
+export const FIND_HIGHEST_FEMALE_MALE_RATIO_SUCCESS = 'FIND_HIGHEST_FEMALE_MALE_RATIO_SUCCESS';
+export const FIND_HIGHEST_FEMALE_MALE_RATIO_ERROR = 'FIND_HIGHEST_FEMALE_MALE_RATIO_ERROR';
+
+
+export const fetchCountries = () => {
+	return {
+		type: FETCH_COUNTRIES,
+	};
+};
+
+export const sortCountries = countries => {
+	return {
+		type: SORT_COUNTRIES,
+		payload: countries,
+	};
+};
